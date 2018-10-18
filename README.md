@@ -33,15 +33,21 @@ Choose a page by press buttons A to H on the right of your Launchpad Mini
   * 14 - Hot Cue 3
   * 15 - Hot Cue 4
   * 16 - Progress of the song (this is two rows wide)
+  
+  ![PageA](https://i.imgur.com/d2YZDc3.jpg)
 
 ## Page B
   * 1 - Gain
   * 2 - Filter High
   * 3 - Filter Mid
   * 4 - Filter Low
+  
+  ![PageB](https://i.imgur.com/Rdz483u.jpg)
 
 ## Page C
   * 1 - Volume
+  
+  ![PageC](https://i.imgur.com/AdJMF7H.jpg)
 
 ## Page D
   * 1 - Flanger Depth
@@ -49,6 +55,8 @@ Choose a page by press buttons A to H on the right of your Launchpad Mini
   * 3 - Filter HPF
   * 4 - BitCrusher Depth
   * 5 - Reverb Mix
+  
+  ![PageD](https://i.imgur.com/ig6r665.jpg)
 
 ## Page E
   * 1 - Play/Pause
@@ -59,6 +67,8 @@ Choose a page by press buttons A to H on the right of your Launchpad Mini
   * 6 - Hot Cue 4
   * 7 - Progress of the song
   * 8 - Shift Key (When pressed you can remove an Hot Cue)
+  
+  ![PageE](https://i.imgur.com/XmqJbhm.jpg)
 
 ## Page H
   * 1 - Fullscreen Library
@@ -77,3 +87,5 @@ Choose a page by press buttons A to H on the right of your Launchpad Mini
   * 14 - Loand song on sampler 2
   * 15 - Loand song on sampler 3
   * 16 - Loand song on sampler 4
+  
+  ![PageH](https://i.imgur.com/fmm0Zgc.jpg)
