@@ -294,6 +294,33 @@ function FFBK(deck, ctrl, ffbk) {
   return that;
 }
 
+function ControlKey(deck, ctrl, action, color_off, color_on) {
+  var that = new Key();
+  that.deck = deck;
+  that.group = "[" + ctrl + deck + "]";
+  that.setColor(color_off);
+
+  that.setled = function() {
+      if (this.pressed) {
+          this.setColor(color_on);
+      } else {
+          this.setColor(color_off);
+      }
+  }
+
+  that.setled()
+
+  that.callback = function() {
+    if (this.pressed) {
+      engine.setValue(this.group, action, 1);
+    } else {
+      engine.setValue(this.group, action, 0);
+    }
+    that.setled()
+  }
+  return that;
+}
+
 function PlayKey(ctrl, deck) {
     var that = new Key();
     that.group = "[" + ctrl + deck + "]";
@@ -642,6 +669,12 @@ NLM.init = function()
               NLM.setupBtn(page,0,0, PlayKey("Channel", deck));
               // PFL
               NLM.setupBtn(page,1,0, TooglePfl("Channel", deck));
+              // KEY
+              NLM.setupBtn(page,2,0, ControlKey(deck, "Channel", "pitch_down", "lo_amber", "hi_red"));
+              NLM.setupBtn(page,3,0, ControlKey(deck, "Channel", "pitch_up", "lo_amber", "hi_red"));
+              // TEMPO
+              NLM.setupBtn(page,0,1, ControlKey(deck, "Channel", "rate_perm_down", "lo_yellow", "hi_red"));
+              NLM.setupBtn(page,1,1, ControlKey(deck, "Channel", "rate_perm_up", "lo_yellow", "hi_red"));
               // FAST FORWARD
               NLM.setupBtn(page,3,1, FFBK(deck, "Channel", "fwd"));
               // FAST REWIND
@@ -680,6 +713,12 @@ NLM.init = function()
             NLM.setupBtn(page,0,4, PlayKey("Channel", deck));
             // PFL
             NLM.setupBtn(page,1,4, TooglePfl("Channel", deck));
+            // KEY
+            NLM.setupBtn(page,2,4, ControlKey(deck, "Channel", "pitch_down", "lo_amber", "hi_red"));
+            NLM.setupBtn(page,3,4, ControlKey(deck, "Channel", "pitch_up", "lo_amber", "hi_red"));
+            // TEMPO
+            NLM.setupBtn(page,0,5, ControlKey(deck, "Channel", "rate_perm_down", "lo_yellow", "hi_red"));
+            NLM.setupBtn(page,1,5, ControlKey(deck, "Channel", "rate_perm_up", "lo_yellow", "hi_red"));
             // FAST FORWARD
             NLM.setupBtn(page,3,5, FFBK(deck, "Channel", "fwd"));
             // FAST REWIND

@@ -33,6 +33,10 @@ Choose a page by press buttons A to H on the right of your Launchpad Mini
   * 14 - Hot Cue 3
   * 15 - Hot Cue 4
   * 16 - Progress of the song (this is two rows wide)
+  * 17 - Key Down (Button between PFL and Loop)
+  * 18 - Key Up (Button between PFL and Loop)
+  * 19 - Tempo Down (Button below Play/Pause)
+  * 20 - Tempo Up (Button below PFL)
   
   ![PageA](https://i.imgur.com/d2YZDc3.jpg)
 
